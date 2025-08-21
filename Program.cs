@@ -19,24 +19,35 @@
                 Console.WriteLine(beer.ToString() + "\n__________________________");
             });
 
-
             string obj = "beer1";
-            Console.WriteLine($"---- {obj} ToString ----");
+            Console.WriteLine($"\n---- {obj} ToString ----");
             Console.WriteLine(beer1.ToString());
 
-            obj = "beer6";
-            Console.WriteLine($"---- {obj} ToString ----");
-            Console.WriteLine(beer6.ToString());
+          
+            obj = "beer1 GetUnits";
+            Console.WriteLine($"\n---- {obj} ToString ----");
+            Console.WriteLine(beer1.GetUnits().ToString());
+
+            obj = "beer4 GetUnits";
+            Console.WriteLine($"\n---- {obj} ToString ----");
+            Console.WriteLine(beer4.GetUnits().ToString());
 
             obj = "beer6 GetUnits";
-            Console.WriteLine($"---- {obj} ToString ----");
+            Console.WriteLine($"\n---- {obj} ToString ----");
             Console.WriteLine(beer6.GetUnits().ToString());
 
-            //obj = "beer6 Procent CompareTo beer1 Procent";
-            //float comparison = beer6.Procent.CompareTo(beer1.Procent);
-            //Console.WriteLine($"---- {obj} ----");
-            //Console.WriteLine(comparison);
+            CompareVolumen compareVolumen = new();
 
+            obj = "CompareVolumen beer6, beer1";
+            int compared = compareVolumen.Compare(beer6, beer1);
+            Console.WriteLine($"\n---- {obj} ----");
+            Console.WriteLine(compared);
+
+            CompareName compareName = new();
+            obj = "CompareName beer1, beer2";
+            compared=compareName.Compare(beer1, beer2);
+            Console.WriteLine($"\n---- {obj} ----");
+            Console.WriteLine(compared);
 
         }
     }

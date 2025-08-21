@@ -55,7 +55,8 @@ namespace BeerKlasse
             string retur = $"\nNavn: {Navn}" +
                 $"\nType: {Slags}" +
                 $"\nProcent: {Procent}%" +
-                $"\nVolumen: {VolumenCl}cl.";
+                $"\nVolumen: {VolumenCl}cl." +
+                $"\nGenstande: {GetUnits():N2}";
             return retur; //base.ToString();
         }
         public double GetUnits()
