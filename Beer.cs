@@ -24,14 +24,6 @@ namespace BeerKlasse
         private BeerType _slags;
         private float _procent;
         private int _volumenCl;
-        private int myVar;
-
-        public int MyProperty
-        {
-            get { return myVar; }
-            set { myVar = value; }
-        }
-
 
         //properties, get og set til alle fields
         public string Navn { get { return _navn; } set { _navn = value; } }

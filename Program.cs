@@ -11,6 +11,7 @@
             Beer beer5 = new("Fem", BeerType.Pilsner, 5f, 25);
 
             Beer beer6 = (beer1 + beer4);
+            Beer beer7 = new();
 
             List<Beer> beerList = new() { beer1, beer2, beer3, beer4, beer5, beer6 };
             beerList.Sort((a, b) => b.Procent.CompareTo(a.Procent));
